@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>sign up</title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">	
+ </head>
+ <body>
+     <div class="back"></div>
+     <div id="fpage">
+      <img src="icon.png"><br><br><br>
+      <form action="home.html" onsubmit="return checkpass(this);">
+          <input class="i1" id="name" type="text" name="fname" placeholder="First Name" required>
+          <input class="i1" id="name" type="text" name="lname" placeholder="Last Name" required>
+          <input class="i1"  type="text" name="address" placeholder="Address" required>
+          <input class="i1"  type="tel" name="phnumber" placeholder="Number" required pattern="[0-9]{11}" maxlength="11">
+          <input class="i1" type="email" name="name" placeholder="Enter E-mail" required><br>
+          <input class="i1" id="pas" type="password" name="password1" placeholder="Enter Password" required pattern="^[A-Z]{1}[\w\S\_+!@#$%^&*-=]{7}$" title="please, passoword must contain 8 characters and must begin with a capital letter and no white spaces and must contin at least a number and a special character (-,&,*,!@,#,%) " maxlength="8"><br>
+          <input class="i1" id="pas" type="password" name="password2" placeholder="Repeat Password" required maxlength="8"><br>
+          <input class="i2" type="radio" name="r" required> <h5>Male</h5> &nbsp; <input class="i2" type="radio" name="r" required> <h5>Female</h5>
+          <input class="i3" type="submit" value="SIGN UP">          
+          <br><a href="#">help</a>
+
+      </form>
+
+     </div>
+     
+        <!------------------------------------------------------------------------------->
+     
+   <script>
+       var a=document.querySelector('#pas');
+        function checkpass(form) {
+
+            if (a.value != "" && a.value == form.password2.value) {
+                
+                re = /[0-9]/;
+                if (!re.test(a.value)) {
+                    alert("sorry, password must contain at least a number (0-9)!");
+                    a.focus();
+                    return false;
+                }
+                re = /[^\d\sA-z]/;
+                if (!re.test(a.value)) {
+                    alert("Error: password must contain at least a special character (-=+%&!)!");
+                    a.focus();
+                    return false;
+                }
+
+            } else {
+                alert("Error: Please check that you've entered and confirmed your password!");
+                a.focus();
+                return false;
+            }
+
+            return true;
+        }
+     </script>
+ </body>
+</html>

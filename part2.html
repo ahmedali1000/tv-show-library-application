@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>part two</title>
+    <link rel="stylesheet" href="part.css">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div>
+            <div class="empty"></div>
+        <div id="bar">
+          <ul>
+            <li><a  href="home.html">HOME</a></li>  
+            <li><a  href="part1.html">PART ONE</a></li>  
+            <li class="a1"><a href="part2.html">PART TWO</a></li>  
+            <li><a href="Reviews.html">REVIEWS</a></li>  
+            <li><a href="form.html">LOG OUT</a></li> 
+          </ul>
+        </div>
+            <div class="d1"><img class="im"  src="8.jpg">
+            <p>Game of Thrones attracted a record viewership on HBO and has a broad, active, and international fan base. The series was acclaimed by critics for its acting, complex characters, story, scope, and production values, although its frequent use of nudity and violence (including sexual violence) was criticized; the final season received further criticism for its condensed story and creative decisions, with many considering it a disappointing conclusion.</p></div>
+            <div class="d1"><img class="im"  src="4.jpg">
+            <p>The novels and their adaptations base aspects of their settings, characters, and plot on events in European history.[47] Most of Westeros is reminiscent of high medieval Europe, from lands and cultures,[48] to the palace intrigue, feudal system, castles, and knightly tournaments. A principal inspiration for the novels is the English Wars</p></div>
+            <div class="d1"><img class="im" src="2.jpg">
+            <p>After Game of Thrones began outpacing the published novels in the sixth season, the series was based on a plot outline of the future novels provided by Martin[66] and original content. In April 2016, the showrunners' plan was to shoot 13 more episodes after the sixth season: seven episodes in the seventh season and six episodes in the eighth.</p></div>
+            <div class="d1"><img class="im" src="5.jpg">
+            <p>The series received 58 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018, and 2019. Its other awards and nominations include three Hugo Awards for Best Dramatic Presentation (2012–2014), a 2011 Peabody Award, and five nominations for the Golden Globe Award for Best Television Series – Drama (2012 and 2015–2018).</p></div>
+        </div>
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/QAWGFsDb_ms?autoplay=1&loop=1&rel=0&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <button onclick="gotop()" class="btn" title="Go to top"></button>
+        
+             <!------------------------------------------------------------------------------->
+        
+        <script>
+            var btn = document.querySelector('.btn');
+            window.onscroll = function() {scroll()};
+
+            function scroll() {
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+                }}
+
+
+            function gotop() {
+             window.scrollTo({
+                 top: 0,
+                 left: 0,
+                 behavior: "smooth" 
+             });
+            }
+
+        </script>
+    </body>
+</html>

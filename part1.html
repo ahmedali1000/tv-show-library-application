@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title> application </title>
+      <link rel="stylesheet" href="part.css">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="container">
+        <div id="bar">
+          <ul>
+            <li><a href="home.html">HOME</a></li>  
+            <li class="a1"><a href="part1.html">PART ONE</a></li>  
+            <li><a href="part2.html">PART TWO</a></li>  
+            <li><a href="Reviews.html">REVIEWS</a></li>  
+            <li><a href="form.html">LOG OUT</a></li> 
+          </ul>
+        </div>
+            <div class="empty"></div>
+            <div class="d1"><img class="im"  src="7.jpg">
+            <p class="pa">Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones. The show was both produced and filmed in Belfast and elsewhere in the United Kingdom.</p></div>
+            <div class="d1"><img class="im"  src="5954f457298d4af93e8b46e8.jpg">
+            <p>Although the first season closely follows the events of the first novel, later seasons have made significant changes. According to David Benioff, the TV adaptation is "about adapting the series as a whole and following the map George laid out for us and hitting the major milestones, but not necessarily each of the stops along the way</p></div>
+            <div class="d1"><img class="im"  src="war.jpg">
+            <p> Game of Thrones has several plots and a large ensemble cast and follows several story arcs. One arc is about the Iron Throne of the Seven Kingdoms and follows a web of alliances and conflicts among the noble dynasties either vying to claim the throne or fighting for independence from it.</p></div>
+            <div class="d1"><img class="im"  src="1.jpg">
+            <p>Another focuses on the last descendant of the realm's deposed ruling dynasty, who has been exiled and is plotting a return to the throne, while another story arc follows the Night's Watch, a brotherhood defending the realm against the fierce peoples and legendary creatures of the North.</p></div>
+
+        </div>
+        
+        <button onclick="gotop()" class="btn" title="Go to top"></button>
+        
+
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/QAWGFsDb_ms?autoplay=1&loop=1&rel=0&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+             <!------------------------------------------------------------------------------->
+        
+        <script>
+            
+            var btn = document.querySelector('.btn');
+            window.onscroll = function() {scroll()};
+
+            function scroll() {
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+                }}
+
+
+            function gotop() {
+             window.scrollTo({
+                 top: 0,
+                 left: 0,
+                 behavior: "smooth" 
+             });
+            }
+            
+        </script>
+    </body>
+</html>
